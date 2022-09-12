@@ -5,10 +5,12 @@ import oculosTransition  from '../../assets/oculos02.png';
 import oculosDeSol  from '../../assets/oculos03.png';
 import oculosInfantil  from '../../assets/oculos04.png'; 
 
+import './styles.css';
+
 export function ProductSection(){
     return(
-        <section id='produtos'>
-            <div>
+        <section id='produtos' className='container-product'>
+            <div className='limit-section'>
                 <h2>NOSSOS PRODUTOS</h2>
                 <p>
                     Trabalhamos com óculos de grau, óculos de sol, lentes transition nos modelos 
@@ -17,23 +19,23 @@ export function ProductSection(){
                 <p>
                     Todos os nossos preços são acessíveis e contam com a melhor qualidade do mercado.
                 </p>
-                <div>
-                    <div>
+                <div className='product'>
+                    <div className='box-product'>
                         <h2>Óculos de grau</h2>
                         <img src={oculosDeGrau} alt="" />
                         <p>R$ 500,00</p>
                     </div>
-                    <div>
+                    <div className='box-product'>
                         <h2>Óculos Transition</h2>
                         <img src={oculosTransition} alt="" />
                         <p>R$ 750,00</p>
                     </div>
-                    <div>
+                    <div className='box-product'>
                         <h2>Óculos de sol</h2>
                         <img src={oculosDeSol} alt="" />
                         <p>R$ 700,00</p>
                     </div>
-                    <div>
+                    <div className='box-product'>
                         <h2>Óculos infantil</h2>
                         <img src={oculosInfantil} alt="" />
                         <p>R$ 500,00</p>

@@ -1,51 +1,46 @@
 import React from 'react';
 
-import imgFace from '../../assets/fb.png';
-import imgInsta from '../../assets/ig.png';
-import imgEmail from '../../assets/email.png';
-import imgCell from '../../assets/telefone.png';
-import imgPlace from '../../assets/local.png';
-import imgTwitter from '../../assets/tt.png';
+import './styles.css';
 
 export function ContactsSection(){
     return(
-        <section id='contato'>
-            <div>
+        <section id='contato' className='container-contacts'>
+            <div className='limit-section'>
                 <h2>FALE CONOSCO</h2>
                 <p>
                     Não perca tempo, venha conhecer uma de nossas lojas ou entre em contato através de nossas redes 
                     sociais ou da central de atendimento.
                 </p>
-                <div>
-                    <div>  
-                        <h2>Contato</h2>
+                <div className='box-content'>
+                    <div className='box-card'>  
+                        <h4>Contato</h4>
                         <div>
-                            <img src={imgPlace} alt="" />
+                            <img src="assets/local.png" title="Ícone local" alt="Pino de localização" />
                             <p>Nova Iguaçu, RJ</p>
                         </div>
                         <div>
-                            <img src={imgCell} alt="" />
+                            <img src="assets/telefone.png" title="Ícone telefone" alt="Ícone de um telefone" />
                             <p>(21) 99999-9999</p>
                         </div><div>
-                            <img src={imgEmail} alt="" />
+                            <img src="assets/email.png" title="Ícone email" alt="Ícone de uma carta" />
                             <p>conato@oticavida.com</p>
                         </div>
                     </div>
-                </div>
-                <div>  
-                        <h2>Nossas Redes Sociais</h2>
+                    <div className='box-card'>  
+                        <h4>Nossas Redes Sociais</h4>
                         <div>
-                            <img src={imgFace} alt="" />
+                            <img src="assets/fb.png" title="Ícone facebook" alt="logo do facebook" />
                             <p>/OticaVida</p>
                         </div>
                         <div>
-                            <img src={imgInsta} alt="" />
+                            <img src="assets/ig.png" title="Ícone instagram" alt="logo do instagram" />
                             <p>@oticavidarj</p>
                         </div><div>
-                            <img src={imgTwitter} alt="" />
+                            <img src="assets/tt.png" title="Ícone twitter" alt="logo do twitter" />
                             <p>@oticavidarj</p>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
     );

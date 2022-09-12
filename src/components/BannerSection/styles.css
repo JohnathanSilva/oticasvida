@@ -1,0 +1,36 @@
+.container-banner{
+    background-image: url('/public/assets/capa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+}
+
+.container-banner div{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-banner p,
+.container-banner h1{
+    max-width: 500px;
+    font-family: 'Anybody', cursive;
+}
+
+.container-banner p{
+    font-size: 36px;
+    color: rgb(196,196,196) ;
+}
+
+.container-banner h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 70px;
+}

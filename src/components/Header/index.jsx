@@ -6,15 +6,15 @@ import './styles.css';
 
 export function Header(){
     return(       
-        <header className='container'>
-            <nav className='limit-section'>                
-                <img src={logo} alt="logo" className='imgLogo' />
-                <nav className='limit-section'>
+        <header>
+            <div className='limit-section'>                
+                <img src={logo} alt="logo" />
+                <nav>
                     <a href='#produtos'>PRODUTOS</a>
                     <a href='#sobre'>SOBRE</a>
                     <a href='#contato'>CONTATO</a>
                 </nav>
-            </nav>       
+            </div>       
         </header>
     );
 }
