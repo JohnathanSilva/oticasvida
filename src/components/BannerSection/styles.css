@@ -34,3 +34,22 @@
     letter-spacing: 5px;
     line-height: 70px;
 }
+
+@media (max-width: 768px){
+    .container-banner h1{
+        font-size: 40px;
+        max-width: 350px;
+    }
+    .container-banner p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .container-banner{
+        background-position: 89% center;
+    }
+    .container-banner  div{
+        background-color: rgba(0,0,0,0.6);
+    }
+}

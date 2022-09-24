@@ -47,3 +47,32 @@
   font-size: 22px;
   color: #4a4a4a;
 }
+
+@media (max-width: 768px){
+  .container-company{
+    padding: 60px 20px;
+  }
+  .card{
+    padding: 15px;
+  }
+  .card h2{
+    font-size: 22px;
+  }
+  .card p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px){
+  .container-company{
+    padding: 0 10px;
+  }
+  .box-cards{
+    flex-direction: column;
+  }
+  .box-cards img,
+  .card{
+    width: 100%;
+    height: 300px;
+  }
+}
